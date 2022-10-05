@@ -33,4 +33,13 @@ public class Ksiegarnia {
         Pracownicy.add(new Bibliotekarz(o.getImie(), o.getNazwisko(), o.getUrodziny(), DataZatrudnienia));
         System.out.println("Pracownik " + o.getImie() + " " + o.getNazwisko() + " Został zatrudniony dnia: " + DataZatrudnienia);
     }
+
+    public static void czyKsiazka(Ksiazka k){
+        if(!k.isCzyPorzyczone()){
+            System.out.println("Książka " + k.getTytul() + " jest dostępna");
+        }
+        else{
+            System.out.println("Książka " + k.getTytul() + " nie jest dostępna");
+        }
+    }
 }

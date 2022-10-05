@@ -17,9 +17,13 @@ public class Main {
         var czytelnik = Ksiegarnia.getCzytelnicy();
         var ksiazka = Ksiegarnia.getKsiazki();
         czytelnik.get(0).wyporzyczKsiazke(ksiazka.get(0));
+        Ksiegarnia.czyKsiazka(ksiazka.get(0));
         czytelnik.get(1).wyporzyczKsiazke(ksiazka.get(1));
         czytelnik.get(0).oddajKsiazke(ksiazka.get(1));
         czytelnik.get(0).oddajKsiazke(ksiazka.get(0));
+        Ksiegarnia.czyKsiazka(ksiazka.get(0));
         czytelnik.get(1).oddajKsiazke(ksiazka.get(1));
+        czytelnik.get(0).wyporzyczKsiazke(ksiazka.get(0));
+        Czytelnik.ileWyporzyczonych(kubaBed);
     }
 }
