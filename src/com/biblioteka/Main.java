@@ -17,20 +17,24 @@ public class Main {
         var czytelnik = Ksiegarnia.getCzytelnicy();
         var ksiazka = Ksiegarnia.getKsiazki();
         czytelnik.get(1).wyporzyczKsiazke(ksiazka.get(1));
-        piesPsi.ileWyporzyczonych(czytelnik.get(1));
+        czytelnik.get(1).ileWyporzyczonych();
         czytelnik.get(0).wyporzyczKsiazke(ksiazka.get(0));
-        kubaBed.ileWyporzyczonych(czytelnik.get(0));
-        System.out.println("pies");
+        czytelnik.get(0).ileWyporzyczonych();
         czytelnik.get(0).oddajKsiazke(ksiazka.get(0));
         czytelnik.get(0).oddajKsiazke(ksiazka.get(1));
-        kubaBed.ileWyporzyczonych(czytelnik.get(0));
+        czytelnik.get(0).ileWyporzyczonych();
+        czytelnik.get(1).ileWyporzyczonych();
         czytelnik.get(1).oddajKsiazke(ksiazka.get(1));
-        piesPsi.ileWyporzyczonych(czytelnik.get(1));
+        czytelnik.get(1).ileWyporzyczonych();
+        czytelnik.get(0).ileWyporzyczonych();
         Ksiegarnia.czyKsiazka(ksiazka.get(0));
         czytelnik.get(1).oddajKsiazke(ksiazka.get(1));
         czytelnik.get(0).wyporzyczKsiazke(ksiazka.get(0));
-        kubaBed.ileWyporzyczonych(czytelnik.get(0));
-        piesPsi.ileWyporzyczonych(czytelnik.get(1));
+        czytelnik.get(0).ileWyporzyczonych();
+        czytelnik.get(1).ileWyporzyczonych();
+        czytelnik.get(1).oddajKsiazke(ksiazka.get(0));
+        czytelnik.get(0).oddajKsiazke(ksiazka.get(0));
+        czytelnik.get(0).ileWyporzyczonych();
     }
 
 }
