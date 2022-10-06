@@ -13,6 +13,10 @@ public class Czytelnik extends Osoba{
         this.iloscWyporzyczonych = 0;
     }
 
+    public void ileWyporzyczonych(){
+        System.out.println("Czytelnik " + getImie() + " " + getNazwisko() + " ma " + getPorzyczone().size() + " Wypożyczonych książek");
+    }
+
     public void wyporzyczKsiazke(Ksiazka k){
         if(k.isCzyPorzyczone()){
             System.out.println("Książka pod tytułem: " + k.getTytul() + " jest już wyporzyczona!!");
