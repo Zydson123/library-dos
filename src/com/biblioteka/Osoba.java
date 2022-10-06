@@ -14,10 +14,6 @@ public class Osoba {
     public void setIloscWyporzyczonych(int iloscWyporzyczonych) {
         this.iloscWyporzyczonych = iloscWyporzyczonych;
     }*/
-
-    public void ileWyporzyczonych(Czytelnik c){
-        System.out.println("Czytelnik " + c.getImie() + " " + c.getNazwisko() + " ma " + c.getPorzyczone().size() + " Wypożyczonych książek");
-    }
     public Osoba(String imie, String nazwisko, String urodziny) {
         this.imie = imie;
         this.nazwisko = nazwisko;
